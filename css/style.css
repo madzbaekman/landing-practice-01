@@ -1,0 +1,383 @@
+/* 작성자 : 백성범 */
+/* 작성일 : 2022-05-24 */
+
+/* 
+코드에 대한 생각 : 중복되는 CSS가 아쉬움, CSS 방법론 중 OOCSS처럼
+                  분류해서 공통된 부분을 파악하고 프로그래밍에 들어갔다면 하는
+                  아쉬움이 있다.
+*/
+
+/* common css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+}
+
+h1 {font-size: 60px;}
+h2 {font-size: 36px;}
+h3 {font-size: 28px;}
+h1,h2,h3,p {margin: 0;}
+
+ul, ol, li {list-style: none; margin: 0; padding: 0;}
+
+a {text-decoration: none; color: #222;}
+
+a:link, a:hover, a:focus, a:active {color:#222;}
+
+/* container */
+
+.common-width {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+/* nav part */
+.main-content-wrap {
+  position: relative;
+}
+
+.main-content-wrap img {
+  position: absolute;
+  top: 0;
+  left: 550px;
+}
+
+.main-content-wrap img:hover {
+  animation: littleshake .25s;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-left h1 {
+  font-size:36px;
+  color: #fff;
+}
+ 
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-right ul {
+  display: flex;
+}
+
+.nav-right a {
+  display: block;
+  padding: 33px;
+  color: #fff;
+  transition: background .3s;
+}
+
+.nav-right a:hover {
+  background-color: rgba(34, 34, 34, .3);
+}
+
+/* main part */
+.section-main {
+  background: rgb(225,62,36);
+  background: linear-gradient(180deg, rgba(225,62,36,1) 0%, rgba(248,129,18,1) 100%);
+  color: #fff;
+}
+
+.main-content {
+  padding: 200px 0 300px;
+  width: 600px;
+  line-height: 1.5;
+}
+
+.main-content p {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.main-content button {
+  margin: 30px 0;
+  padding: 20px 60px;
+  background: transparent;
+  border : 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+.main-content button:hover {
+  background: rgba(34, 34, 34, .3);
+}
+
+/* about part */
+.about-background {
+  background-image: url(../images/fruit01.jpg);
+}
+
+.about-content {
+  padding: 250px 0;
+  margin-left: 600px;
+}
+
+.about-content p {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.about-content button {
+  margin: 30px 0;
+  padding: 20px 60px;
+  background: rgb(248,129,18);
+  border : 2px solid rgb(248,129,18);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.about-content button:hover {
+  background: rgb(248, 106, 18);
+}
+
+/* explain part */
+
+.explain-content-wrap {
+  position: relative;
+}
+
+.explain-content-wrap img {
+  position: absolute;
+  width: 600px;
+  top: 100px;
+  left: 640px;
+}
+
+.explain-content {
+  padding: 200px 0;
+  width: 600px;
+  line-height: 1.5;
+}
+
+.explain-content p {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.explain-content button {
+  margin: 30px 0;
+  padding: 20px 60px;
+  background: transparent;
+  border : 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+.explain-content button:hover {
+  background: rgba(34, 34, 34, .3);
+}
+
+/* customer part */
+.customer-background {
+  padding: 160px 0;
+  background-image: url(../images/fruit-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.customer-content { 
+  margin: 0 auto;
+  padding: 40px 0 30px;
+  background-color: rgba(255, 255, 255, .5);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #ccc;
+}
+
+.customer-content img {
+  margin-bottom: 40px;
+  border: 24px solid rgb(248, 106, 18);
+  border-radius: 50%;
+}
+
+.customer-content p {
+  margin: 16px 0;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* footer part */
+.footer-content-wrap {
+  padding: 50px 0;
+  background-color: #2b2b2b;
+  text-align: center;
+  color: #ddd;
+}
+
+.footer-content span {
+  color: rgb(248, 106, 18);
+}
+
+.footer-content p {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+/* keyframes */
+@keyframes littleshake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(2.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* modal part */
+.modal-bg {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(34, 34, 34,.9);
+  transition: all .5s;
+}
+
+.modal-text-wrap {
+  position: relative;
+  padding: 120px 0;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.modal-text-wrap span {
+  font-size: 36px;
+}
+
+.modal-text-wrap p {
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-show {visibility: visible; opacity: 1;}
+
+/* responsible web */
+@media screen and (max-width:767px) {
+  
+  /* container */
+  .common-width {
+    width: 100%;
+    min-width: 640px;
+  }
+
+  /* nav part */
+  .main-content-wrap {
+    text-align: center;
+  }
+
+  .main-content-wrap img {
+    position: static;
+    width: 400px;
+  }
+
+  .nav-left h1 {
+    padding-left: 24px;
+    font-size:24px;
+  }
+  
+  /* main part */
+  .main-content {
+    padding: 100px 0 0;
+    width: 100%;
+  }
+
+  .main-content p {
+    padding: 10px 40px;
+  }
+
+  /* about part */
+  .about-background {
+    background-position: bottom;
+  }
+
+  .about-content {
+    padding: 250px 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-content p {
+    padding: 10px 40px;
+  }
+
+  /* explain part */
+
+  .explain-content-wrap img {
+    display: none;
+  }
+
+  .explain-content {
+    padding: 150px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .explain-content p {
+    padding: 10px 40px;
+  }
+
+  /* customer part */
+  .customer-content { 
+    margin: 0 20px;
+    padding: 40px 0 30px;
+    background-color: rgba(255, 255, 255, .5);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #ccc;
+  }
+
+  .customer-content img {
+    margin-bottom: 20px;
+    width: 100px;
+    border: 12px solid rgb(248, 106, 18);
+  }
+
+  .customer-content p {
+    padding: 0 40px;
+    margin: 16px 0;
+    font-size: 20px;
+  }
+
+  /* footer part */
+  .footer-content h2 {
+    font-size: 24px;
+  }
+
+  .footer-content p {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+}

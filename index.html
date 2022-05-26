@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>꿀맛 과일음료</title>
+</head>
+<body>
+  <!-- modal part -->
+  <div class="modal-bg">
+    <div class="modal-text-wrap">
+      <span class="close">❌</span>
+      <span>🤷‍♂️</span>
+      <h2>Q. 어떤 페이지인가요?</h2>
+      <p>
+        '맛있는 과일음료' 라는 브랜드의 랜딩페이지입니다.<br/>
+        HTML, CSS, JavaScript를 활용하여 제작하였습니다.<br/><br/>
+        Semantic Tag의 활용, Flex 레이아웃, 반응형 디자인<br/>
+        transition 등을 보실 수 있습니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal-bg">
+    <div class="modal-text-wrap">
+      <span class="close">❌</span>
+      <span>🤷‍♂️</span>
+      <h2>Q. 어떤 점이 아쉬웠나요?</h2>
+      <p>
+        CSS가 중복되는 문제를 더 간략하게 줄일 수 있었다는 점이 아쉬웠습니다.<br/>
+        반복되는 Section에서 중복되는 CSS는 기획과 시안을 보면서 미리 분류를 하고<br/>
+        깔끔한 CSS로 퍼블리싱을 마무리할 수 있으면 좋겠습니다.
+        <br/><br/>
+        저의 CSS 습관을 파악할 수 있는 프로젝트였습니다.<br/>
+        추후 리팩토링, 타 프로젝트에서 이 점을 도입해 깔끔한 CSS를 짜는데 도움이 될 것 입니다.
+      </p>
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    <!-- main part -->
+    <section class="section-main">
+      <!-- nav part -->
+      <nav class="nav-wrap common-width">
+        <nav class="nav-left">
+          <a href="/">
+            <h1>맛있는 과일음료</h1>
+          </a>
+        </nav>
+        <nav class="nav-right">
+          <ul>
+            <li>
+              <a href="#">프로젝트</a>
+            </li>
+            <li>
+              <a href="#">아쉬운 점</a>
+            </li>
+            <li>
+              <a href="https://www.naver.com/">다른 프로젝트</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+      <!-- nav part end -->
+
+      <div class="main-content-wrap common-width">
+        <div class="main-content">
+          <h1>맛있는 과일음료</h1>
+          <h2>싸고 가까운 여기서 사드세요!</h2>
+          <p>과일음료 역사만 300년을 자랑하는 맛있는 과일음료는 합성 감미료를 사용하여 천연의 맛을 찾는 사람들에게 천연 따위는 잊게 만드는 기막힌 맛으로 고객을 매혹시킵니다. 현대인에게 가장 어울리는 맛! 저희를 찾아주세요!</p>
+          <button class="check-btn">당장 구매하기</button>
+        </div>
+        <img src="./images/juice01.png" alt="과일음료 이미지">
+      </div>
+    </section>
+
+    <!-- about part -->
+    <section class="about-background">
+      <div class="about-content-wrap common-width">
+        <div class="about-content">
+          <h2>맛있는 과일음료를 소개합니다.</h2>
+          <p>지구 상의 어떤 음료 가게에서도 저희 같은 맛을 낼 순 없습니다. 천연 과즙 같은 것은 상상할 수도 없는 진정한 감미료 100%의 맛! 상큼함이 터지는 과육은 뭘로 만들어졌는지 궁금하지 않으신가요? 마셔서 궁금증을 해결하세요!</p>
+          <button class="check-btn">당장 구매하기</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- explain part -->
+    <section class="section-main">
+
+      <div class="explain-content-wrap common-width">
+        <div class="explain-content">
+          <h2>건강하진 않지만 맛이 있잖아요!</h2>
+          <p>언제까지 건강 신경 쓰실 건가요? 건강도 좋지만 정말 맛있는 걸 위해서는 잠시 내려놓아도 괜찮지 않을까요? </p>
+          <button class="check-btn">당장 구매하기</button>
+        </div>
+        <img src="./images/drink.jpg" alt="과일음료 이미지">
+      </div>
+    </section>
+
+    <!-- customer part -->
+    <section class="customer-background">
+      <div class="customer-content-wrap common-width">
+        <div class="customer-content">
+          <img src="./images/customer.png" alt="고객 이미지">
+          <div class="customer-text">
+            <h3>김연어 (59)</h3>
+            <p>맛있는 과일음료를 몰랐던 제 과거를 후회해요..<br/>저는 그 동안 완벽하지 못했죠. 그러나 맛있는 과일음료 한 모금으로 이제는 담배를 살 때 민증 검사를 받아요!<br/>고마워요! 맛있는 과일음료! 그 덕에 회춘했어요!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer part -->
+    <footer class="footer-content-wrap">
+      <div class="footer-content common-width">
+        <h2>지금 당장 주문하지 않으면 <span>평생 못 먹을지 모릅니다!</span></h2>
+        <p>왜냐면 이번 주까지 하고 사업을 철수할 예정이거든요! 최고의 맛을 놓칠 생각은 없으시죠?</p>
+        <hr>
+        <p>~~~ Copyright 2022 ~~~</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- script file -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
